@@ -1,0 +1,64 @@
+// Honor Pledge:
+//
+// I pledge that I have neither given nor
+// received any help on this assignment.
+//
+// blakbenn
+
+
+project (Final){
+	exename = Final
+	
+	specific (make) {
+		compile_flags += -std=c++11
+	}
+
+	Source_Files {
+		driver.cpp
+		Eval_Expr_Tree.cpp
+		Expr_Builder.cpp
+		Visitor.cpp
+		Expr_Node.cpp
+		Binary_Expr_Node.cpp
+		Add_Node.cpp
+		Subtract_Node.cpp
+		Multiply_Node.cpp
+		Divide_Node.cpp
+		Mod_Node.cpp
+		Parentheses_Node.cpp
+		Closed_Parentheses_Node.cpp
+		Integer_Node.cpp
+		Expr_Tree_Builder.cpp
+	}
+	Template_Files {
+		BaseArray.cpp
+		Array.cpp
+		Stack.cpp
+		Stack_Iterator.cpp
+	}
+	Header_Files{
+		BaseArray.h
+		Array.h
+		Stack.h
+		Eval_Expr_Tree.h
+                Expr_Builder.h
+                Expr_Tree_Builder.h
+                Visitor.h
+                Expr_Node.h
+		Binary_Expr_Node.h
+		Add_Node.h
+                Subtract_Node.h
+                Multiply_Node.h
+                Divide_Node.h
+                Mod_Node.h
+                Parentheses_Node.h
+		Closed_Parentheses_Node.h
+                Integer_Node.h
+		Stack_Iterator.h
+	}
+	Inline_Files{
+		BaseArray.inl
+		Array.inl
+		Stack.inl
+	}
+}
